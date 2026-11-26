@@ -12,6 +12,6 @@ class Cheapshot < Formula
   end
 
   test do
-    assert_match "0.5.0", shell_output("#{bin}/cheapshot --version")
+    assert_match version.to_s, shell_output("#{bin}/cheapshot --version")
   end
 end
